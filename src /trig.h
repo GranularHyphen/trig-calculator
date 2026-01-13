@@ -1,7 +1,7 @@
 //declare library functions
 
-#ifndef GEOMETRY_H
-#define GEOMETRY_H
+#ifndef TRIGONOMETRY_H
+#define TRIGONOMETRY_H
 
 int sector_length();
 float sector_area();
