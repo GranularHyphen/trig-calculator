@@ -1,30 +1,18 @@
-//use libarary in a script
+//return values
 
+#include <math.h>
 #include "trigonometry.h"
-#include <stdio.h>
 
-int main() {
-    int choice;
-
-    printf("Do you want to:\n");
-    printf(" 1. Find sector length\n");
-    printf(" 2. Find sector area\n");
-    printf(" 3. Find distance between two points\n");
-    printf("Enter choice (1,2, 3): ");
-
-    scanf("%d", &choice);
-
-    if (choice == 1) {
-        sector_length();
-    } else if (choice == 2) {
-        sector_area();
-    } else if (choice == 3) {
-        distance();
-    } else {
-        printf("Invalid choice.\n");
-    }
-
-    return 0;
-
+float sector_length(float radius, float angle) {
+    return radius * angle;
 }
 
+float sector_area(float radius, float angle) {
+    return 0.5f * radius * radius * angle;
+}
+
+float distance(float x1, float y1, float x2, float y2) {
+    float dx = x2 - x1;
+    float dy = y2 - y1;
+    return sqrtf(dx*dx + dy*dy);
+}
