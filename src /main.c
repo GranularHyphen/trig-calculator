@@ -1,6 +1,6 @@
 //use libarary in a script
 
-#include "geometry.h"
+#include "trigonometry.h"
 #include <stdio.h>
 
 int main() {
@@ -27,3 +27,4 @@ int main() {
     return 0;
 
 }
+
